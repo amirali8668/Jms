@@ -22,7 +22,7 @@ public class Main {
 //            throw new RuntimeException(e);
 //        }
 
-        while (true) {
+
             ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
             try {
                 Connection connection = connectionFactory.createConnection();
@@ -39,6 +39,6 @@ public class Main {
                 throw new RuntimeException(e);
             }
 
-        }
+
     }
 }
